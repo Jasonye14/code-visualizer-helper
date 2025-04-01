@@ -76,10 +76,10 @@ export default function DiagramView({ graph }: DiagramViewProps) {
         attributionPosition="bottom-right"
       >
         <Panel position="top-right" className="space-x-2">
-          <Button variant="secondary" size="icon" onClick={zoomIn}>
+          <Button variant="secondary" size="icon" onClick={() => zoomIn()}>
             <ZoomInIcon size={18} />
           </Button>
-          <Button variant="secondary" size="icon" onClick={zoomOut}>
+          <Button variant="secondary" size="icon" onClick={() => zoomOut()}>
             <ZoomOutIcon size={18} />
           </Button>
           <Button variant="secondary" size="icon" onClick={handleFitView}>
